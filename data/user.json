@@ -1,0 +1,50 @@
+[
+  {
+    "name": "tikson",
+    "password": "tikson123",
+    "passwordConfirm": "tikson123",
+    "email": "tikson@gmail.com",
+    "place": "allapuzha",
+    "mobile": 8921377191
+  },
+  {
+    "name": "mansoor",
+    "password": "mansoor123",
+    "passwordConfirm": "mansoor123",
+    "email": "mansoor123@gmail.com",
+    "place": "allapuzha",
+    "mobile": 9035762112
+  },
+  {
+    "name": "Paul",
+    "password": "paul123",
+    "passwordConfirm": "paul123",
+    "email": "paul@gmail.com",
+    "place": "Ernakulam",
+    "mobile": 9035762119
+  },
+  {
+    "name": "varkey",
+    "password": "varkey123",
+    "passwordConfirm": "varkey123",
+    "email": "varkey@gmail.com",
+    "place": "Kottatyam",
+    "mobile": 8919982030
+  },
+  {
+    "name": "Arun",
+    "password": "arun123",
+    "passwordConfirm": "arun123",
+    "email": "arun123@gmail.com",
+    "place": "Kannur",
+    "mobile": 8919982078
+  },
+  {
+    "name": "Thomas",
+    "password": "Thomas123",
+    "passwordConfirm": "Thomas123",
+    "email": "Thomas123@gmail.com",
+    "place": "allapuzha",
+    "mobile": 8783929339
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "id": 0,
+    "name": "Destiny Farmstay",
+    "NoOfPersonsOccupy": 50,
+    "ratePerDay": 5000,
+    "description": "The cottage is ideal for a large family group and is in a superb setting with walks from the door.Enjoy a luxurious experience in a beautiful setting! Tea Harvester is a 4-star boutique resort in Munnar, Kerala. It is located at a distance of 2 km from Chithirapuram View Point and 8 km from Attukad Waterfall.",
+    "images": [],
+    "Features": ["freewifi", "food included", "AirConditon"],
+    "ownerEmail": "reshma.reubro@gmail.com",
+    "ownerPhone": 9496303871,
+    "address": "munnar"
+  },
+
+  {
+    "id": 1,
+    "name": "Bamboo Banks",
+    "NoOfPersonsOccupy": 50,
+    "ratePerDay": 5000,
+    "description": "The cottage is ideal for a large family group and is in a superb setting with walks from the door.",
+    "images": [],
+    "Features": ["freewifi", "free parking"],
+    "ownerEmail": "reshma.reubro@gmail.com",
+    "ownerPhone": 9496303871,
+    "address": "thekkadi"
+  },
+  {
+    "id": 2,
+    "name": "Back Water Farm House",
+    "NoOfPersonsOccupy": 10,
+    "ratePerDay": 500,
+    "description": "The bone of backwaters with a pleasnt neighbours",
+    "images": [],
+    "Features": ["Free Parking", "Internet Connectivity"],
+    "ownerEmail": "re@gmail.com",
+    "ownerPhone": 9496303341,
+    "address": "Thazhupu Cherthala, Alleppey, Kerala 688540"
+  },
+  {
+    "id": 3,
+    "name": "Mulav Villa",
+    "NoOfPersonsOccupy": 20,
+    "ratePerDay": 200,
+    "description": "A good place for family functions or any small get together parties... A river view resort... Spacious enough.. They got parking place.... A room attached with toilets is their.... Overall it is a OK resort... Outside functions in the evening may have a trouble with mosquitoes... Other wise is a affordable resort with all quality",
+    "images": [],
+    "Features": ["freewifi", "Internet Connectivity"],
+    "ownerEmail": "hakeempazhu@gmail.com",
+    "ownerPhone": 9567888835,
+    "address": "Mulavukad, Ernakulam, Kerala 682504, India"
+  },
+  {
+    "id": 4,
+    "name": "The Tea Factory",
+    "NoOfPersonsOccupy": 20,
+    "ratePerDay": 1000,
+    "description": "One tea factory visit is a must in Munnar so this one is good as any. They have guides who explains the entire process in English. Green tea was being processed on our day of visit. This particular factory processes 21 tonnes of leaves in a day.",
+    "images": [],
+    "Features": ["freewifi", "food included", "AirConditon", "Free Parking"],
+    "ownerEmail": "brolin@gmail.com",
+    "ownerPhone": 9496303871,
+    "address": "Munnar, Kerala, India"
+  },
+  {
+    "id": 5,
+    "name": "Greenland Farmhouses Resort",
+    "NoOfPersonsOccupy": 10,
+    "ratePerDay": 3000,
+    "description": "Relaxed resort with colonial-style cottages, forest views & hiking trails, plus a kids' playground.",
+    "images": [],
+    "Features": ["freewifi", "free parking"],
+    "ownerEmail": "shivanarayan@gmail.com",
+    "ownerPhone": 9496303871,
+    "address": "Nelliyampathy - Seetharkundu Road, Sitargundu Estate, Nelliyampathy, Kerala 678511"
+  },
+  {
+    "id": 6,
+    "name": "Vismayagiri Homestay",
+    "NoOfPersonsOccupy": 5,
+    "ratePerDay": 500,
+    "description": "Vismayagiri Homestay is a budget property located in thehill station of Kannur and 2 km from Meenmutty Falls. It offers 24-hour frontdesk and room service.This Kooram guest-house has 1 floor and accommodates 4well-furnished rooms equipped with a wardrobe, bottled/drinking water and an attached bathroom with hot and cold water facility.Guests can relax in the garden. The travel desk assistswith sight-seeing and car rental services. Additional facilities like airporttransfers, luggage storage, medical, laundry and parking are available at this property.Vismayagiri Homestay is 61 km from Thalassery RailwayStation and 73 km from Kannur International Airport. Wayanad WildlifeSanctuary- 55 km, Chembra Peak- 62 km and Pakshipathalam- 50 km are the famoustourist attractions in Kannur",
+    "images": [],
+    "Features": ["freewifi", "food included", "AirConditon", "free parking"],
+    "ownerEmail": "vismaya@gmail.com",
+    "ownerPhone": 9496303871,
+    "address": "Korome, Wayanad, Kerala 673309"
+  },
+  {
+    "id": 7,
+    "name": "Misty valley",
+    "NoOfPersonsOccupy": 10,
+    "ratePerDay": 4250,
+    "description": "Misty valley hill Resorts is heritage farm houses constructed by Britishers located at the reserve forest of Nelliyampathy hills, Integral part of Western Ghats, a UNESCO APPROVED WORLD HERITAGE SITE due to its great biological diversity and exceptional natural beauty . The majesty of Nelliyampathy Hills (3,500 ft.) slowly unfolds along the mountain road from Nemmara,palakkadu(dist), winding past 10 hairpin bends towards Pulayanpara, from there you have to change your vehicle to a four wheel drive to Misty Valley. It will be an off road drive of 13.5 KM by enjoying a very rare blend of natural beauty and wild life .Misty valley is the part of 914 acres plantation of coffee, cardamom and orange namely ANAMADA ESTATE, started by Britishers by the end of eighteenth century.Misty valley is bounded with the vested forest of parambikulam tiger reserve and Nelliyampathy reserve forest.",
+    "images": [],
+    "Features": ["freewifi", "food included", "AirConditon"],
+    "ownerEmail": "reshma.reubro@gmail.com",
+    "ownerPhone": 9496303871,
+    "address": "Muthalamada North, Nelliyampathy, Palakkadu(dt), Kerala–678508"
+  }
+]
