@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors=require('cors')
 const mongoose = require('mongoose');
 const bookingRouter = require('./routes/bookingsRoutes');
 const toursRouter = require('./routes/toursRouter');
@@ -15,6 +16,7 @@ const hpp = require('hpp');
 var bodyParser = require('body-parser');
 
 //////////////////////////////////////////////////
+app.use(cors)
 app.use(bodyParser.json());
 app.use(mongoSanitise());
 // console.log(mongoSanitise());
