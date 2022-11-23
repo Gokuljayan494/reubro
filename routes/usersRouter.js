@@ -14,7 +14,7 @@ router.route('/tours').get( tourController.getAllTours);
 
 router
   .route('/tour/:tourId')
-  .get(userController.protect, userController.getTour);
+  .get( userController.getTour);
 
 // router.route('/users').get(userController.protect, userController.getAllUsers);
 // router.route('/user').get(userController.protect, userController.getUser);
