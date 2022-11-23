@@ -16,7 +16,7 @@ const hpp = require('hpp');
 var bodyParser = require('body-parser');
 
 //////////////////////////////////////////////////
-app.use(cors)
+app.use(cors())
 app.use(bodyParser.json());
 app.use(mongoSanitise());
 // console.log(mongoSanitise());
