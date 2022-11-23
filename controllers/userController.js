@@ -323,7 +323,7 @@ exports.addTours = async (req, res) => {
 exports.getAllTours = async (req, res) => {
   const tours = await tourModel.find();
   try {
-    res.status(200).json({ status: 'sucess', data: { tours } });
+    res.status(200).json(  tours );
   } catch (err) {
     res.status(400).json({ status: 'fail' });
   }
