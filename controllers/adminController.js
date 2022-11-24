@@ -102,7 +102,20 @@ exports.logout = async (req, res) => {
     res.status(400).json({ status: `Fail`, message: `Error ${err.message}` });
   }
 };
-
+exports.addTour=async(req,res)=>{
+  try{
+   const tours= await TourModel.create({
+      name:req.body.name,NoOfPersonsOccupy:req.body.NoOfPersonsOccupy,ratePerDay:req.body.ratePerDay,
+      address:req.body.address,description:req.body.description,ownerEmail:req.body.ownerEmail,ownerPhone:req.body.ownerPhone
+ 
+    })
+  res.status(200).json(tours)
+   }
+  
+  catch(err){
+  res.status(200).json({status:"fail",message:`Error:${err.message}`})
+  }
+}
 exports.tourEdit = async (req, res) => {
   try {
     const tours = await TourModel.findById(req.params.id);
