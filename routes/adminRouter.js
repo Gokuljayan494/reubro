@@ -20,15 +20,16 @@ router.route('/logout').get(adminController.logout);
 router
   .route('/toursEdit/:id')
   .put(
-    authController.protect,
+    
     adminController.uploadPhoto,
     adminController.tourEdit
   );
 // router.route('/protect').post(authController.protect);
-router.route('/tours').get(authController.protect, adminController.getAllTous);
+router.route('/tours').get( adminController.getAllTous);
 // router.get('/tour:id', authController.protect, adminController);
-router.route('/tour/:id').get(authController.protect, adminController.getTour);
-module.exports = router;
+router.route('/tour/:id').get( adminController.getTour);
+router.route("/addTour).post(adminController.addTour)
+
 
 router.route('/forgotpassword').post(adminController.forgotPassword);
 router.route('/resetPassword/:token').patch(adminController.resetpassword);
@@ -81,3 +82,5 @@ router
   .post(authController.protect, reviewController.newReviews);
 
 router.route('/getReviews/:reviewId').get(reviewController.getReviews);
+
+module.exports = router;
