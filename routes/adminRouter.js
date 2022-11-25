@@ -20,8 +20,6 @@ router.route('/logout').get(adminController.logout);
 router
   .route('/toursEdit/:id')
   .put(
-    
-    adminController.uploadPhoto,
     adminController.tourEdit
   );
 // router.route('/protect').post(authController.protect);
