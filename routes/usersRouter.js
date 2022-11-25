@@ -13,7 +13,7 @@ router.route('/login').post(userController.login);
 router.route('/tours').get( tourController.getAllTours);
 
 router
-  .route('/tour/:tourId')
+  .route('/tour/:id')
   .get( userController.getTour);
 
 // router.route('/users').get(userController.protect, userController.getAllUsers);
