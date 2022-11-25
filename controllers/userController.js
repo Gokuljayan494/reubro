@@ -336,7 +336,7 @@ exports.getTour = async (req, res) => {
 //       .populate('Bookings');
     // .populate('reviewUsers');
 
-    res.status(200).json({ status: 'sucess', tour });
+    res.status(200).json( tour );
   } catch (err) {
     res.status(400).json({ status: 'fail', message: `Error:${err.message}` });
   }
