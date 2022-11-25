@@ -332,7 +332,7 @@ exports.getAllTours = async (req, res) => {
 exports.getTour = async (req, res) => {
   try {
     const tour = await tourModel
-      .findById(req.params.tourId);
+      .findById(req.params.id);
 //       .populate('Bookings');
     // .populate('reviewUsers');
 
