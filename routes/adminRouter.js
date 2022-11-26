@@ -13,7 +13,7 @@ const adminController = require('../controllers/adminController');
 const FeatureModel = require('../models/featuresModel');
 router.route('/').post(adminController.addAdmin);
 router.route('/signin').post(authController.signIn);
-router.route('/deleteTour').delete(adminController.deleteTour)
+router.route('/deleteTour/:TourId').delete(adminController.deleteTour)
 router.route('/login').post(authController.login);
 router.route('/logout').get(adminController.logout);
 
