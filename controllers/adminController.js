@@ -62,7 +62,7 @@ exports.getAllTous = async (req, res) => {
 };
 exports.deleteTour=async(req,res)=>{
 try{
-const tours=  await TourModel.deleteById(req.params.TourId)
+const tours=  await TourModel.findByIdAndDelete(req.params.TourId)
 res.status(200).json({status:"sucess",message:"null"})
 }
   catch(err){
