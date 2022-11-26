@@ -60,7 +60,15 @@ exports.getAllTous = async (req, res) => {
     res.status(401).json({ status: 'Fail', Error: `${err.message}` });
   }
 };
-
+exports.deleteTour=async(req,res)=>{
+try{
+const tours=  await TourModel.deleteById(req.params.TourId)
+res.status(200).json({status:"sucess",message:"null"})
+}
+  catch(err){
+  res.status(400),json({status:"fail",message:`Error:${err.message}`})
+  }
+}
 exports.getTour = async (req, res) => {
   try {
     console.log(req.params.id);
