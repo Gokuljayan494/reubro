@@ -118,9 +118,10 @@ exports.addTour=async(req,res)=>{
       address:req.body.address,description:req.body.description,ownerEmail:req.body.ownerEmail,ownerPhone:req.body.ownerPhone
  
     })
-   if (req.file.filename) {
-      tours.images.push(req.file.filename);
-    }
+    console.log(req.file)
+//    if (req.file.) {
+//       tours.images.push(req.file.filename);
+//     }
  tours=  await tours.save()
  
   res.status(200).json(tours)
