@@ -119,8 +119,8 @@ exports.addTour=async(req,res)=>{
  
     })
     console.log(`-------------------`)
-    console.log(req.files)
-   if (req.file.) {
+    console.log(req.file)
+   if (req.file.filename) {
       tours.images.push(req.file.filename);
     }
  tours=  await tours.save()
