@@ -33,9 +33,9 @@ exports.signIn = async (req, res) => {
       //   sameSite: 'none',
       //   secure: true,
       // })
-      .json({ status: 'sucess', data: { admin }, token });
+      .json({  token });
   } catch (err) {
-    res.status(400).json({ status: 'Fail', message: `Error:${err.message}` });
+    res.status(400).json({ status: 'Fail', message: `hello Error:${err.message}` });
   }
 };
 
@@ -67,9 +67,9 @@ exports.login = async (req, res) => {
         // sameSite: 'none',
         // secure: true,
       })
-      .json({ status: 'sucess', admin, token });
+      .json({token });
   } catch (err) {
-    res.status(400).json({ status: 'Fail', message: `Error:${err.message}` });
+    res.status(400).json({ status: 'Fail', message: ` hello Error:${err.message}` });
   }
 };
 
