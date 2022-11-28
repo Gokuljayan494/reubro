@@ -77,10 +77,10 @@ exports.protect = async (req, res, next) => {
   try {
     console.log(`--------------------------`);
     console.log(
-      req.headers.authorization.startsWith('Bearer'),
+      
       req.cookies.token
     );
-    if (!req.headers.authorization.startsWith('Bearer') || !req.cookies.token) {
+    if (!req.cookies.token) {
       throw new Error('sign in first');
     }
     if (req.cookies.token) {
