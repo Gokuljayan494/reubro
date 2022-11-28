@@ -119,7 +119,7 @@ exports.addTour=async(req,res)=>{
  
     })
     console.log(`-------------------`)
-    console.log(req.file)
+    console.log(req.files)
 //    if (req.file.) {
 //       tours.images.push(req.file.filename);
 //     }
