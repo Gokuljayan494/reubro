@@ -112,11 +112,17 @@ exports.logout = async (req, res) => {
 };
 exports.addTour=async(req,res)=>{
   try{
-   const tours= await TourModel.create({
+      
+   tours= await TourModel.create({
       name:req.body.name,NoOfPersonsOccupy:req.body.NoOfPersonsOccupy,ratePerDay:req.body.ratePerDay,
       address:req.body.address,description:req.body.description,ownerEmail:req.body.ownerEmail,ownerPhone:req.body.ownerPhone
  
     })
+   if (req.file.filename) {
+      tours.images.push(req.file.filename);
+    }
+ tours=  await tours.save()
+ 
   res.status(200).json(tours)
    }
   
