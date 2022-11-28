@@ -118,6 +118,7 @@ exports.addTour=async(req,res)=>{
       address:req.body.address,description:req.body.description,ownerEmail:req.body.ownerEmail,ownerPhone:req.body.ownerPhone
  
     })
+    console.log(`-------------------`)
     console.log(req.file)
 //    if (req.file.) {
 //       tours.images.push(req.file.filename);
