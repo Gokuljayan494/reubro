@@ -23,10 +23,10 @@ router
     adminController.tourEdit
   );
 // router.route('/protect').post(authController.protect);
-router.route('/tours').get( authController.protect,adminController.getAllTous);
+router.route('/tours').get( adminController.getAllTous);
 // router.get('/tour:id', authController.protect, adminController);
 router.route('/tour/:id').get( adminController.getTour);
-router.route("/addTour").post(authController.protect,adminController.addTour)
+router.route("/addTour").post(adminController.addTour)
 
 
 router.route('/forgotpassword').post(adminController.forgotPassword);
