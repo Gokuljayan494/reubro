@@ -37,7 +37,15 @@ exports.signIn = async (req, res) => {
     res.status(400).json({ status: 'Fail', message: `Error:${err.message}` });
   }
 };
-
+exports.getUsers=async(req,res)=>{
+try{
+const users=await userModel.find()
+res.status(200).json({users})
+}
+  catch(err){
+  res.status(400).json({status:"fail",message:`Error:${err.message}`})
+  }
+}
 exports.login = async (req, res) => {
   try {
     const { email, password } = req.body;
