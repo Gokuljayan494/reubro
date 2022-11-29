@@ -76,13 +76,13 @@ exports.login = async (req, res) => {
 exports.protect = async (req, res, next) => {
   try {
     console.log(`--------------------------`);
-    console.log(
+//     console.log(
       
-      req.cookies.token
-    );
-    if (!req.cookies.token) {
-      throw new Error('sign in first');
-    }
+//       req.cookies.token
+//     );
+//     if (!req.cookies.token) {
+//       throw new Error('sign in first');
+//     }
     if (req.cookies.token) {
       token = req.cookies;
     }
