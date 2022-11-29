@@ -46,6 +46,16 @@ res.status(200).json({users})
   res.status(400).json({status:"fail",message:`Error:${err.message}`})
   }
 }
+exports.SearchTours = async (req, res) => {
+  try {
+    const tours = await TourModel.find({
+      $or: [{ name: { $regex: req.params.key } }],
+    });
+    res.status(200).json({ status: 'sucess', results: tours.length, tours });
+  } catch (err) {
+    res.status(400).json({ status: 'fail', message: `Error:${err.message}` });
+  }
+};
 exports.login = async (req, res) => {
   try {
     const { email, password } = req.body;
