@@ -86,6 +86,8 @@ exports.protect = async (req, res, next) => {
     if (req.cookies.token) {
       token = req.cookies;
     }
+    
+    console.log(req.headers.authorization)
     if (
       (req.headers.authorization,
       req.headers.authorization.startsWith('Bearer'))
