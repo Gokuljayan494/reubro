@@ -11,7 +11,7 @@ router.route('/SignIn').post(userController.signIn);
 router.route('/login').post(userController.login);
 
 router.route('/tours').get( tourController.getAllTours);
-
+router.route('/getUsers').get(userController.getUsers)
 router
   .route('/tours/:id')
   .get( userController.getTour);
