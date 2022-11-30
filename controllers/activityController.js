@@ -81,13 +81,13 @@ exports.Edit = async (req, res) => {
   }
 };
 
-exports.deleteActivity = async (req, res) => {
-  try {
-    res.status(200).json({ status: 'sucess' });
-  } catch (err) {
-    res.status(400).json({ status: 'Fail', message: `Error:${err.message}` });
-  }
-};
+// exports.deleteActivity = async (req, res) => {
+//   try {
+//     res.status(200).json({ status: 'sucess' });
+//   } catch (err) {
+//     res.status(400).json({ status: 'Fail', message: `Error:${err.message}` });
+//   }
+// };
 exports.allActivtys = async (req, res) => {
   try {
     const activity = await ActivityModel.find();
