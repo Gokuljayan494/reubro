@@ -350,7 +350,7 @@ exports.getAllTours = async (req, res) => {
 exports.getTour = async (req, res) => {
   try {
     const tour = await tourModel
-      .findOne({id:req.params.id});
+      .findOne({name:req.params.id});
 //       .populate('Bookings');
     // .populate('reviewUsers');
 
