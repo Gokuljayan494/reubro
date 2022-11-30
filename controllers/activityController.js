@@ -32,9 +32,9 @@ exports.addActivities = async (req, res) => {
     console.log(`------------------`);
     console.log(req.body);
     const { description, name, additionCost } = req.body;
-    const photo = req.file.filename;
+   
     const activity = await ActivityModel.create({
-      photo,
+     
       description,
       name,
       additionCost,
