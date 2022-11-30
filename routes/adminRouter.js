@@ -41,7 +41,7 @@ router
   .route('/addActivity')
   .post(
    
-    activityController.uploadPhoto,
+   
     activityController.addActivities
   );
 router
