@@ -40,7 +40,7 @@ router
   .post(userController.protect, userController.addFavouriteList);
 router
   .route('/favouriteList/:userId')
-  .get(userController.protect, userController.favouriteList);
+  .get( userController.favouriteList);
 router
   .route('/deleteFavouriteList/:favouriteId')
   .delete(userController.protect, userController.deleteFavourite);
