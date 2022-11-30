@@ -40,30 +40,30 @@ router.route('/resetPassword/:token').patch(adminController.resetpassword);
 router
   .route('/addActivity')
   .post(
-    authController.protect,
+   
     activityController.uploadPhoto,
     activityController.addActivities
   );
 router
   .route('/editActivity/:activityId')
   .put(
-    authController.protect,
+   
     activityController.uploadPhoto,
     activityController.Edit
   );
 router
   .route('/allActivities')
-  .get(authController.protect, activityController.allActivtys);
+  .get( activityController.allActivtys);
 
 router
   .route('/deleteActivity/:activityId')
-  .delete(authController.protect, activityController.deleteActivity);
+  .delete( activityController.deleteActivity);
 
 ////////////////////////////////////////////////
 //  features
 router
   .route('/addFeatures')
-  .post(authController.protect, featureController.addFeatures);
+  .post( featureController.addFeatures);
 router
   .route('/deleteFeatures/:featuresId')
   .delete(featureController.deleteFeatures);
