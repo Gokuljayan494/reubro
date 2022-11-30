@@ -44,7 +44,7 @@ exports.addActivities = async (req, res) => {
     console.log(`---------------------`);
     console.log(`---------------------`);
     console.log(`---------------------`);
-    console.log(photo, description, name, additionCost);
+    console.log(description, name, additionCost);
 
     res.status(200).json({
       status: 'sucess',
