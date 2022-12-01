@@ -10,11 +10,11 @@ const bookingController = require('../controllers/bookingController');
 router.route('/SignIn').post(userController.signIn);
 router.route('/login').post(userController.login);
 router.route('/search').post(userController.SearchTours)
-router.route('/tours').get(userController.protect, tourController.getAllTours);
+router.route('/tours').get( tourController.getAllTours);
 router.route('/getUsers').get(userController.getUsers)
 router
   .route('/tours/:id')
-  .get(userController.protect, userController.getTour);
+  .get( userController.getTour);
 
 // router.route('/users').get(userController.protect, userController.getAllUsers);
 // router.route('/user').get(userController.protect, userController.getUser);
