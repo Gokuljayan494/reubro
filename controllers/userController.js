@@ -7,8 +7,8 @@ const jwt = require('jsonwebtoken');
 const sendEmail = require('../controllers/sendMail');
 const crypto = require('crypto');
 const dataUser = require('../data/user.json');
-  {LocalStorage} = require('../') 
-localstorage1 = new LocalStorage('./scratch')
+var LocalStorage = require('node-localstorage').LocalStorage,
+localStorage = new LocalStorage('./scratch');
 // localstorage1 = require("localStorage")
 //  = new LocalStorage('./scratch');
 const FavouriteModel = require('../models/favouriteModel');
@@ -118,7 +118,7 @@ exports.protect = async (req, res, next) => {
     // if (!token) {
     //   throw new Error('Login first');
     // }
-   let token= localstorage1.getItem('token')
+   let token= localStorage.getItem('token')
     const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
     console.log(decoded);
     const currentUser = await userModel.findById(decoded.id);
