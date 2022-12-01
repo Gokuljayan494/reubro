@@ -7,6 +7,8 @@ const jwt = require('jsonwebtoken');
 const sendEmail = require('../controllers/sendMail');
 const crypto = require('crypto');
 const dataUser = require('../data/user.json');
+let LocalStorage = require('node-localstorage').LocalStorage,
+localstorage1 = new LocalStorage('./scratch');
 const FavouriteModel = require('../models/favouriteModel');
 const ReviewModel = require('../models/reviewModel');
 const signToken = function (id) {
@@ -93,27 +95,28 @@ exports.login = async (req, res) => {
 
 exports.protect = async (req, res, next) => {
   try {
-    console.log(`--------------------------`);
-    console.log(
-      req.headers.authorization.startsWith('Bearer'),
-      req.cookies.token
-    );
-    if (!req.cookies.token) {
-      throw new Error('sign in first');
-    }
-    if (req.cookies.token) {
-      token = req.cookies;
-    }
-    if (
-      (req.headers.authorization,
-      req.headers.authorization.startsWith('Bearer'))
-    ) {
-      token = req.headers.authorization.split(' ')[1];
-    }
-    console.log(token);
-    if (!token) {
-      throw new Error('Login first');
-    }
+    // console.log(`--------------------------`);
+    // console.log(
+    //   req.headers.authorization.startsWith('Bearer'),
+    //   req.cookies.token
+    // );
+    // if (!req.cookies.token) {
+    //   throw new Error('sign in first');
+    // }
+    // if (req.cookies.token) {
+    //   token = req.cookies;
+    // }
+    // if (
+    //   (req.headers.authorization,
+    //   req.headers.authorization.startsWith('Bearer'))
+    // ) {
+    //   token = req.headers.authorization.split(' ')[1];
+    // }
+    // console.log(token);
+    // if (!token) {
+    //   throw new Error('Login first');
+    // }
+   let token= localstorage1.getItem('token')
     const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
     console.log(decoded);
     const currentUser = await userModel.findById(decoded.id);
