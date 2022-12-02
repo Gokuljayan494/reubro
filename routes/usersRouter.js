@@ -48,7 +48,7 @@ router
 ///////////////////////////////
 // bookings
 router
-  .route('/checkOutSession/:tourId')
+  .route('/checkOutSession')
   .get(userController.protect, bookingController.checkOutSession);
 
 router
